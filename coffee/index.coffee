@@ -1,2 +1,2 @@
 
-exports.ring = require("./deploy").ring
+exports.rain = require("./deploy").rain

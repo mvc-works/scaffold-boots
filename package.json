@@ -1,10 +1,10 @@
 {
   "name": "scaffold-boots",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Scaffold-Boots is a scaffold tool for rain-boots",
   "main": "lib/index.js",
   "dependencies": {
-    "rain-boots": "~0.0.0"
+    "rain-boots": "*"
   },
   "devDependencies": {},
   "scripts": {

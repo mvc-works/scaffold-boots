@@ -1,14 +1,21 @@
 
 ## Scaffold-Boots is a scaffold tool for rain-boots
 
-Write a config file like this:
+Use `npm install scaffold-boots` to install it.  
+Then `scaffold-boots` generates the file structure.  
+After requiring, it listens to `create` event and create file tree.  
+`file_tree` and base directory can be passed to it.  
 
 ```coffee
-structure =
-  "parent-dir":
-    "a-child-file"
-    "a-child-dir": "a-file"
-  "another-file"
-```
+file_tree =
+  "parent": "child"
+  "tree":
+    "a": "aa"
+    "b": "bbb"
 
-Then `scaffold-boots` generates the file structure.
+scaffold = require("scaffold-boots").rain
+
+scaffold.emit "create", file_tree, "test"
+
+scaffold.emit "erase", file_tree, "test"
+```
